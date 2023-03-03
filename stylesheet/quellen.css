@@ -1,0 +1,277 @@
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-size: 100.01%;
+  }
+  
+  body{
+   background-color: var(--background);
+   color: var(--foreground);
+   margin: 0;
+   padding: 10px;
+  }
+  
+  ::-webkit-scrollbar{
+   display: none;
+  }
+
+  
+
+/*GLOBAL COLOR*//*GLOBAL COLOR*//*GLOBAL COLOR*/
+
+:focus{
+  outline: none;
+  }
+  
+  :root {
+   --clr-light: #e2e2e2;
+   --clr-dark: #161616;
+   --clr-primary: #f2f3f4;
+   --clr-secondary: #08abff;
+   --clr-accent: #ff0033;
+   --clr-link: #59ff18;
+  
+   --background: var(--clr-dark);
+   --foreground: var(--clr-light);
+  
+  --fill: #08abff;
+  }
+  
+  .lightmode {
+   --clr-light:#efefef;
+   --clr-dark: #000;
+   --clr-primary: #000;
+   --clr-secondary: #0000FF;
+   --clr-accent: #ff0015;
+   --clr-link: #3bd200;
+  
+  --background: var(--clr-light);
+  --foreground: var(--clr-dark);
+  
+  --fill: #0000FF;
+  }
+
+
+
+  .switch-light{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    bottom: 1.4em;
+    text-align: left;
+  }
+  
+  
+  .switch p{
+   line-height: 0;
+   font-family: 'Space Mono',monospace;
+   writing-mode: vertical-lr;
+   text-orientation: sideways;
+   font-size:13px;
+   color: var(--clr-primary);
+   padding-left: 15px;
+  }
+  
+  .light-mode-toggle {
+   color: var(--fill);
+   border: 2px solid currentColor;
+   background: transparent;
+   cursor: pointer;
+   border-radius: 27px;
+   width: 27px;
+   height: 27px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+  }
+  
+  .light-mode-toggle:hover {
+   color: var(--fill);
+   background-color: var(--fill);
+  }
+      
+
+
+/*header*/
+header{
+  position: fixed;
+  display: grid;
+  grid-template-columns: 2fr 4fr 4fr;
+  column-gap: 150px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#Logo{
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--clr-primary);
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+}
+
+#LogoKursiv{
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  color: var(--clr-primary);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+
+button{
+  width: 100%;
+  background-color: var(--fill);
+  display:flex;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+button:hover{
+  background-color: var(--clr-accent);
+  text-decoration: none;
+}
+h6{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-style:normal;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: var(--clr-light);
+  margin: 10px 10px 10px 10px;
+}
+
+/*Layout*/
+
+#main-content{
+  display: grid;
+  grid-template-columns: 2fr 4fr 4fr;
+  column-gap: 150px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+    
+/*styling*/ /*styling*/ /*styling*/ /*styling*/
+
+
+    a{
+      text-decoration: none;
+    }
+    a :hover{
+      text-decoration: none;
+    }
+
+
+    p{
+      font-family: 'Inter', sans-serif;
+      font-weight: normal;
+      font-size: 1em;
+      line-height: 1.4em;
+      color: var(--clr-primary);
+      margin: 0;
+    }
+
+    h1{
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(0.9em, 1vw, 1em);
+      font-weight: bolder;
+      letter-spacing: 5px;
+      color: var(--fill);
+      margin-top: 100px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 3em;
+      font-style: normal;
+      text-decoration: none;
+      color: var(--clr-primary);
+      line-height: 1.4em;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+
+
+    b{
+      line-height: 1.5em;
+    }
+
+
+    ul{
+      width: 250px;
+      margin-top: 0;
+      padding: 0;
+    }
+
+    li{
+      list-style-type: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--clr-secondary);
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    i{
+      color: var(--clr-link);
+      word-break: break-all;
+    }
+    .sources i{
+      word-break: break-all;
+    }
+
+    .whitespace-1{
+      height: 40px;
+    }
+
+    .whitespace-2{
+      height: 160px;
+    }
+
+    .whitespace-3{
+      height: 200px;
+    }
+
+    .whitespace-4{
+      height: 120px;
+    }
+
+    .whitespace-5{
+      height: 70px;
+    }
+
+
+
+
+  
+    
+    
+    @media all and (max-width: 1400px) {
+      #main-content {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 100px;
+      }
+   
+    }
+    
+
+
+
+
+    @media all and (max-width: 1010px) {
+
+      #main-content{
+        display: grid;
+        grid-template-columns: 100%;
+      }
+    
+      }

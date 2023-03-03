@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.typekit.net/zlx0qtl.css">
+		<link rel="stylesheet" href="stylesheet/index.css" charset="utf-8">
+
+		<title>forget-us-not</title>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <script>
+            jQuery(function($){
+                var menuButton = $(".toggle-SideNav");
+                var sideNav = $("#sideNav");
+                var sideNavInactive = $(".sideNavInactive");
+
+                menuButton.click(function(e){
+                    e.preventDefault();
+                    if(sideNav.is(".active")){
+                        sideNav.removeClass("active");
+                        sideNav.animate({width:"40px"},"slow");
+                        menuButton.find('.active').hide();
+                        menuButton.find('.inactive').show();
+                        sideNavInactive.hide();
+                        
+                        
+                    }
+                    else{
+                        sideNav.addClass("active");
+                        sideNav.animate({width:"270px"},"slow");
+                        menuButton.find('.inactive').hide();
+                        menuButton.find('.active').show();
+                        sideNavInactive.fadeIn();
+                    }
+                    
+                })
+
+
+            })
+        </script>
+	</head>
+
+
+
+
+	<body>
+
+<!-- Page Content  -->
+            <header>
+              <a href="index.html"><h4 id="Logo">forget us<i id="LogoKursiv"> not</i></h4></a>
+            </header>
+            
+            <section id="main-content">
+
+                            <div class="titel"></div>
+
+                            <div class="thema">
+                                    <p>Entwicklung einer Webseite mit Mahnmal-Charakter:<br>
+                                        Interface und Web Design in Gedenken an menschliche Opfer globaler autoritärer Gewalt. Ein barrierefreier Weckruf für die Sichtbarkeit tödlicher politischer Machtstrukturen.                         
+                                    </p>
+                            </div>
+
+                            <div class="daten">
+                                    <p>Studentin<br>
+                                    <b>Michaela Kappes</b><br>
+                                    <br>
+                                    Matrikelnummer<br>
+                                    <b>222866</b><br>
+                                    <br>
+        
+                                    Studiengang<br>
+                                    <b>Mediadesign B.A | MD1019</b><br>
+                                    <br>
+        
+                                    Studienort<br>
+                                    <b>Mediadesign Hochschule München</b><br>
+                                    <br>
+        
+                                    Prüfungskommission<br>
+                                    <b>Prof. Frank Rief [Erstprüfer]</b><br>
+                                    <b>Markus Eggart [Zweitprüfer]</b><br>
+                                    <br>
+        
+                                    Abgabeform<br>
+                                   <b>HTML, CSS und JavaScript basierte Webseite</b><br>
+                                   <br>
+        
+                                    Digitale Entwicklung<br>
+                                    <b>Michaela Kappes</b><br>
+                                    <br>
+        
+                                    Verwendete Schriftarten<br>
+                                    <b style="font-family:'Space Grotesk',sans-serif;">Space Grotesk</b><br>
+                                    <b style="font-family:'Space Mono',monospace;">Space Mono</b><br>
+                                    <b style="font-family:'Inter',sans-serif;">Inter</b><br>
+                                    <b style="font-family:'Libre Baskerville',serif; font-style: italic;">Libre Baskerville italic</b><br>
+                                    <br>
+                                    
+                                    Datum der Einreichung<br>
+                                    <b>02. März 2023 | 23:59 </b>                       
+                                    </p>
+
+                                    
+                                    <a href="theorie.html" class="button"><h2>ZUR THEORIE &#10144;</h2></a>
+                                    
+                            </div>
+                    </section>
+
+                    <section id="gendern">
+                      <p>Die vorliegende Arbeit ist geschlechtergerecht verfasst. Es wird darauf geachtet, alle Geschlechter gleichberechtigt anzusprechen und zu berücksichtigen. Aus Gründen der sprachlichen Klarheit und Lesbarkeit wird jedoch in den meisten Fällen das generische Maskulinum verwendet. Diese Entscheidung soll jedoch keinesfalls als Ausschluss oder Benachteiligung von anderen Geschlechtern verstanden werden. Vielmehr dient sie lediglich dazu, den Schreibfluss und die Lesbarkeit der Arbeit zu erleichtern. Sämtliche Formulierungen sind somit geschlechtsneutral gemeint und beziehen sich gleichermaßen auf Frauen, Männer und weitere Geschlechteridentitäten.</p>
+                    </section>
+
+
+         
+                    <section class="switch-light">
+                      <div class="switch">
+                        <p> light </p>
+                          <button id="light-mode-toggle" class="light-mode-toggle"></button>
+                        <p> dark </p>
+                      </div>
+                    </section>
+
+        <script>
+          // check for saved 'lightMode' in localStorage
+			let lightMode = localStorage.getItem('lightMode');
+
+			const lightModeToggle = document.querySelector('#light-mode-toggle');
+
+			const enableLightMode = () => {
+			  // 1. Add the class to the body
+			  document.body.classList.add('lightmode');
+			  // 2. Update lightMode in localStorage
+			  localStorage.setItem('lightMode', 'enabled');
+			}
+
+			const disableLightMode = () => {
+			  // 1. Remove the class from the body
+			  document.body.classList.remove('lightmode');
+			  // 2. Update lightMode in localStorage
+			  localStorage.setItem('lightMode', null);
+			}
+
+			// If the user already visited and enabled lightMode
+			// start things off with it on
+			if (lightMode === 'enabled') {
+			  enableLightMode();
+			}
+
+			// When someone clicks the button
+			lightModeToggle.addEventListener('click', () => {
+			  // get their lightMode setting
+			  lightMode = localStorage.getItem('lightMode');
+
+			  // if it not current enabled, enable it
+			  if (lightMode !== 'enabled') {
+			    enableLightMode();
+			  // if it has been enabled, turn it off
+			  } else {
+			    disableLightMode();
+			  }
+			});
+        </script>
+
+
+	</body>
+</html>
