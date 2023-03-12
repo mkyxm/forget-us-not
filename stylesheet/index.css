@@ -190,6 +190,7 @@ header{
       z-index: 999;
       display: flex;
       justify-content: end;
+      margin-top: 100px;
     }
 
     #gendern p{
@@ -207,24 +208,82 @@ header{
     
     
     
-    @media all and (max-width: 1400px) {
-      .section1 {
-        display: grid;
-        grid-template-columns: 100%;
-        margin-top: 100px;
-      }
-   
-    }
+      @media all and (max-width: 1400px) {
+
+
+        #main-content{
+          display: grid;
+          grid-template-columns: 100%;
+        }
+        
+        .thema{
+          margin-bottom: 100px;
+          padding: 0;
+          width: 500px;
+        }
     
-
-
-
-
-    @media all and (max-width: 1010px) {
-
-      .section1 {
-        display: grid;
-        grid-template-columns: 100%;
-      }
+        .daten{
+          margin-bottom: 100px;
+          padding: 0;
+        }
     
+        .titel{
+          margin-bottom: 50px;
+          padding: 0;
+        }
+  
+        #gendern{
+          position: relative;
+          bottom: 20px;
+          z-index: 999;
+          display: flex;
+          justify-content: end;
+          margin-top: 100px;
+        }
+        
+      
       }
+      
+  
+  
+  
+  
+      @media all and (max-width: 1010px) {
+  
+  
+  
+  
+  
+        #main-content{
+          display: grid;
+          grid-template-columns: 100%;
+        }
+        
+        .thema{
+          margin-bottom: 100px;
+          padding: 0;
+        }
+    
+        .daten{
+          margin-bottom: 100px;
+          padding: 0;
+        }
+    
+        .titel{
+          margin-bottom: 50px;
+          padding: 0;
+        }
+
+        #gendern{
+          position: relative;
+          bottom: 20px;
+          z-index: 999;
+          display: flex;
+          justify-content: end;
+          margin-top: 100px;
+        }
+
+
+        
+
+        }
