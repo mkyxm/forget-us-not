@@ -150,6 +150,7 @@ header{
 
     .button{
       font-family: 'Inter', sans-serif;
+      font-style:normal;
       font-weight: 500;
       font-size: 1em;
       width: 100%;
@@ -167,6 +168,7 @@ header{
 
     .button:hover{
       font-family: 'Inter', sans-serif;
+      font-style: normal;
       font-weight: 500;
       font-size: 1em;
       color: var(--clr-light);

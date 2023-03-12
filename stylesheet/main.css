@@ -577,7 +577,7 @@ header{
       }
 
       .whitespace-1{
-        display: none;
+        height: 40px;
       }
   
       .whitespace-2{
@@ -594,6 +594,36 @@ header{
   
       .whitespace-5{
         display: none;
+      }
+
+
+      .button{
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1em;
+        line-height: 1.4em;
+        width: 100%;
+        color: var(--clr-light);
+        background-color: var(--fill);
+        display: flex;
+        justify-content: left;
+        padding: 20px;
+        border-style: none;
+      }
+  
+  
+      .button:hover{
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1em;
+        line-height: 1.4em;
+        color: var(--clr-light);
+        background-color: var(--clr-accent);
+        text-decoration: none;
+        padding: 20px;
+        border-style: none;
       }
     
     }
@@ -638,7 +668,7 @@ header{
       }
 
       .whitespace-1{
-        display: none;
+        height: 40px;
       }
   
       .whitespace-2{
@@ -655,5 +685,32 @@ header{
   
       .whitespace-5{
         display: none;
+      }
+
+      .button{
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.4em;
+        width: 100%;
+        color: var(--clr-light);
+        background-color: var(--fill);
+        display: flex;
+        justify-content: left;
+        padding: 20px;
+        border-style: none;
+      }
+  
+  
+      .button:hover{
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.4em;
+        color: var(--clr-light);
+        background-color: var(--clr-accent);
+        text-decoration: none;
+        padding: 20px;
+        border-style: none;
       }
       }
