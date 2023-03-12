@@ -147,10 +147,32 @@ header{
       margin: 10px 10px 10px 5px;
     }
 
+
     .button{
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+      width: 100%;
+      color: var(--clr-light);
       background-color: var(--fill);
       display: flex;
-      justify-content: end;
+      justify-content: right;
+      border-style: none;
+      height: 30px;
+      margin-top: 20px;
+      padding-top: 5px;
+      padding-right: 10px;
+    }
+
+
+    .button:hover{
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+      color: var(--clr-light);
+      background-color: var(--clr-accent);
+      text-decoration: none;
+      border-style: none;
     }
 
 

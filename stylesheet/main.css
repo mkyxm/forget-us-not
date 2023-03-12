@@ -298,16 +298,33 @@ header{
       width: 100%;
     }
 
-    button{
+    .button{
+      font-family: 'Inter', sans-serif;
+      font-weight: normal;
+      font-size: 1em;
+      line-height: 1.4em;
       width: 100%;
+      color: var(--clr-light);
       background-color: var(--fill);
       display: flex;
       justify-content: left;
+      padding: 20px;
+      border-style: none;
     }
-    button:hover{
+
+
+    .button:hover{
+      font-family: 'Inter', sans-serif;
+      font-weight: normal;
+      font-size: 1em;
+      line-height: 1.4em;
+      color: var(--clr-light);
       background-color: var(--clr-accent);
       text-decoration: none;
+      padding: 20px;
+      border-style: none;
     }
+
     h6{
       font-family: 'Inter', sans-serif;
       font-weight: 600;
